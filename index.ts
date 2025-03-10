@@ -9,7 +9,7 @@ class Card {
     if (this.rank === "K") return 10;
     if (this.rank === "Q") return 10;
     if (this.rank === "J") return 10;
-    return [parseInt(this.rank)];
+    return parseInt(this.rank);
   }
 }
 
