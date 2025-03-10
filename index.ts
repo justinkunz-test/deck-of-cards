@@ -1,14 +1,14 @@
 class Card {
-  public value: number[];
+  public value: number
   constructor(public suit: string, public rank: string) {
     this.value = this.getCardValue();
   }
 
   private getCardValue() {
-    if (this.rank === "A") return [1, 11];
-    if (this.rank === "K") return [10];
-    if (this.rank === "Q") return [10];
-    if (this.rank === "J") return [10];
+    if (this.rank === "A") return 10
+    if (this.rank === "K") return 10;
+    if (this.rank === "Q") return 10;
+    if (this.rank === "J") return 10;
     return [parseInt(this.rank)];
   }
 }
