@@ -47,7 +47,7 @@ class Deck {
     }
   }
 
-  private dealCard() {
+  private draw() {
     return this.cards.pop();
   }
 }
