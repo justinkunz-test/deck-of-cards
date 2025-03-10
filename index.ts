@@ -50,4 +50,12 @@ class Deck {
   private draw() {
     return this.cards.pop();
   }
+
+  private drawCards(n: number) {
+     const hand: Card[] = [];
+     for(let i = 0; i<n;i++) {
+         hand.push(this.draw());
+     }
+     return hand;
+  }
 }
